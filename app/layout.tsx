@@ -1,20 +1,28 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0A0A0F",
+};
+
 export const metadata: Metadata = {
-  title: "GymOps - Beyond Checklists: Achieve Operational Excellence",
-  description: "Streamline your gym's daily routines and empower your team with GymOps - the operations app designed for CrossFit and boutique gyms.",
-  keywords: "gym management, CrossFit software, gym operations, checklist app, gym app",
+  title: "GymOps — Jouw gym verdient een systeem dat werkt",
+  description:
+    "Leads automatisch opvolgen. Leden behouden. Staff aansturen. GymOps is het complete automatiseringssysteem voor micro gyms, CrossFit boxes en boutique studios.",
+  keywords:
+    "gym automatisering, CrossFit software, gym management, leadopvolging, retentie, staff app, micro gym, boutique fitness",
   authors: [{ name: "GymOps" }],
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#E2442F",
-  manifest: "/manifest.json",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: "GymOps",
+  openGraph: {
+    title: "GymOps — Jouw gym verdient een systeem dat werkt",
+    description:
+      "Het complete automatiseringssysteem voor micro gyms. Leads, retentie en operaties op autopilot.",
+    type: "website",
+    locale: "nl_NL",
   },
 };
 
@@ -24,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="nl">
+      <body className="font-body antialiased bg-dark-950 text-dark-50">
         <Navigation />
         <main>{children}</main>
         <Footer />
