@@ -7,7 +7,7 @@ export default function DemoPage() {
 
   const expectations = [
     'We kijken naar jouw huidige situatie: leads, retentie, operaties',
-    'We laten live zien hoe de automatisering werkt in GHL',
+    'We laten live zien hoe de automatisering werkt',
     'We tonen de Sportbit-koppeling en concrete triggervoorbeelden',
     'We laten de handgeschreven kaarten en event flows zien',
     'Je krijgt een eerlijk advies of GymOps past bij jouw gym',

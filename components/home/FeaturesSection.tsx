@@ -6,7 +6,7 @@ export default function SystemSection() {
       tag: 'Marketing & CRM',
       title: 'GymOps Flow',
       description:
-        'Automatische opvolging van elke lead. Een complete marketingmachine gebouwd op GoHighLevel, ingericht specifiek voor jouw gym. Inclusief je eigen website die naadloos integreert.',
+        'Automatische opvolging van elke lead. Een complete marketingmachine, ingericht specifiek voor jouw gym. Inclusief je eigen website die naadloos integreert.',
       color: 'cinnabar',
       href: '/flow',
       features: ['Leadopvolging via WhatsApp & mail', 'Handgeschreven kaarten', 'Event flows met betaling', 'Google Review-automatisering'],

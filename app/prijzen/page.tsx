@@ -63,7 +63,7 @@ export default function PrijzenPage() {
               <h3 className="text-white text-sm font-semibold mb-4">Wat je krijgt:</h3>
               <ul className="space-y-3 mb-10">
                 {[
-                  'GHL whitelabel platform — volledig ingericht',
+                  'Volledig ingericht platform — klaar voor gebruik',
                   'Custom website — ontwerp, bouw en koppeling inbegrepen',
                   'Sportbit-integratie — gedragsgerichte automatisering',
                   'Leadopvolging via WhatsApp, mail en SMS',

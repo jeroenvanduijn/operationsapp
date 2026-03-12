@@ -29,7 +29,7 @@ export default function PricingPreview() {
 
             <ul className="space-y-2.5 mb-8">
               {[
-                'GHL whitelabel platform',
+                'Volledig ingericht platform',
                 'Custom website',
                 'Sportbit-integratie',
                 'Leadopvolging via WhatsApp & mail',

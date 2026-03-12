@@ -106,9 +106,9 @@ export default function FlowPage() {
               Elk moment benut.
             </h1>
             <p className="text-lg text-dark-300 mb-8 leading-relaxed max-w-2xl">
-              GymOps Flow is jouw complete marketing- en retentiesysteem. Gebouwd op GoHighLevel,
-              volledig ingericht voor micro gyms, gekoppeld aan Sportbit. Van automatische
-              leadopvolging tot handgeschreven kaarten — het systeem werkt terwijl jij coacht.
+              GymOps Flow is jouw complete marketing- en retentiesysteem. Volledig ingericht
+              voor micro gyms, gekoppeld aan Sportbit. Van automatische leadopvolging tot
+              handgeschreven kaarten — het systeem werkt terwijl jij coacht.
             </p>
             <Link href="/demo" className="btn-primary">
               Plan een demo van Flow
@@ -141,7 +141,7 @@ export default function FlowPage() {
               Meer dan een CRM. Een complete groeimachine.
             </h2>
             <p className="text-dark-300 text-lg leading-relaxed">
-              GymOps Flow is een GoHighLevel whitelabel-omgeving die volledig is ingericht
+              GymOps Flow is een compleet platform dat volledig is ingericht
               voor jouw gym. Geen generiek systeem dat je zelf nog moet configureren — wij bouwen het voor je.
             </p>
           </div>
@@ -210,7 +210,7 @@ export default function FlowPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-left max-w-lg mx-auto mb-8">
               {[
-                'GHL whitelabel platform — volledig ingericht',
+                'Volledig ingericht platform — klaar voor gebruik',
                 'Custom website — ontwerp, bouw en koppeling inbegrepen',
                 'Sportbit-integratie — gedragsgerichte automatisering',
                 'Leadopvolging via WhatsApp, mail en SMS',
