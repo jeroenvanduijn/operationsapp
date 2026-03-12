@@ -28,12 +28,12 @@ export default function OvereenkomstPage() {
 
       {/* Contract embed */}
       <section className="pb-20">
-        <div className="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card rounded-2xl p-2 overflow-hidden">
             <iframe
               title="GymOps Dienstverleningsovereenkomst"
               src="https://eu.jotform.com/sign/260706020795051/invite/01kkhswqqz373458b4f30109bd?signEmbed=1"
-              style={{ height: '600px', width: '100%', border: 0 }}
+              style={{ height: '900px', width: '100%', border: 0 }}
               className="rounded-xl bg-white"
             />
           </div>
