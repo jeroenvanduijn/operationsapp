@@ -91,26 +91,27 @@ export default function PulseHighlightSection() {
             </Link>
           </div>
 
-          {/* Right: Real screenshot */}
-          <div className="relative">
-            <div className="glass-card rounded-2xl p-2 md:p-3 border-teal/10">
-              {/* Browser header */}
-              <div className="flex items-center gap-2 px-3 py-2 border-b border-white/[0.06] mb-2">
-                <div className="flex gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
+          {/* Right: Real screenshot in phone frame */}
+          <div className="relative flex justify-center">
+            <div className="max-w-[280px]">
+              <div className="bg-dark-800 rounded-[2.5rem] p-3 shadow-2xl border border-white/[0.08]">
+                <div className="flex justify-center mb-2">
+                  <div className="w-20 h-4 bg-dark-900 rounded-full" />
                 </div>
-                <span className="text-dark-500 text-[10px] font-mono ml-2">GymOps Pulse — Staff App</span>
+                <div className="rounded-[2rem] overflow-hidden bg-white">
+                  <Image
+                    src="https://jfwdrup73imvcrrq.public.blob.vercel-storage.com/screenshots/Gymops%20pulse%20-%20staff%20app.PNG"
+                    alt="GymOps Pulse staff app met checklists en shift-handovers"
+                    width={375}
+                    height={812}
+                    className="w-full h-auto"
+                    unoptimized
+                  />
+                </div>
+                <div className="flex justify-center mt-2">
+                  <div className="w-24 h-1 bg-dark-600 rounded-full" />
+                </div>
               </div>
-              <Image
-                src="https://jfwdrup73imvcrrq.public.blob.vercel-storage.com/screenshots/Gymops%20pulse%20-%20staff%20app.PNG"
-                alt="GymOps Pulse staff app met checklists en shift-handovers"
-                width={600}
-                height={400}
-                className="w-full h-auto rounded-lg"
-                unoptimized
-              />
             </div>
           </div>
         </div>

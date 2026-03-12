@@ -10,16 +10,19 @@ const pulseScreenshots = [
     src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app.PNG`,
     alt: 'GymOps Pulse — Staff App',
     caption: 'Staff app',
+    mobile: true,
   },
   {
     src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app2.PNG`,
     alt: 'GymOps Pulse — Routines',
     caption: 'Routines',
+    mobile: true,
   },
   {
     src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app%203.PNG`,
     alt: 'GymOps Pulse — Taken afvinken',
     caption: 'Taken afvinken',
+    mobile: true,
   },
   {
     src: `${BLOB_BASE}/gymops%20pulse%20-%20taken%20overzicht.png`,
