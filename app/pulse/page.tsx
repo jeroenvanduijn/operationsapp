@@ -1,11 +1,47 @@
-import Link from 'next/link';
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'GymOps Pulse — Staff App & Operationeel Overzicht',
-  description:
-    'Dagelijkse checklists, shift-handovers, incidentregistratie en een management dashboard. GymOps Pulse geeft operationele rust aan jouw gym.',
-};
+import Link from 'next/link';
+import ScreenshotShowcase from '@/components/ScreenshotShowcase';
+
+const BLOB_BASE = 'https://jfwdrup73imvcrrq.public.blob.vercel-storage.com/screenshots';
+
+const pulseScreenshots = [
+  {
+    src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app.PNG`,
+    alt: 'GymOps Pulse — Staff App',
+    caption: 'Staff app',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app2.PNG`,
+    alt: 'GymOps Pulse — Routines',
+    caption: 'Routines',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20pulse%20-%20staff%20app%203.PNG`,
+    alt: 'GymOps Pulse — Taken afvinken',
+    caption: 'Taken afvinken',
+  },
+  {
+    src: `${BLOB_BASE}/gymops%20pulse%20-%20taken%20overzicht.png`,
+    alt: 'GymOps Pulse — Taken overzicht',
+    caption: 'Taken overzicht',
+  },
+  {
+    src: `${BLOB_BASE}/gymops%20pulse%20-%20GM%20interactieve%20taken.png`,
+    alt: 'GymOps Pulse — Interactieve taken',
+    caption: 'Interactieve taken',
+  },
+  {
+    src: `${BLOB_BASE}/gymops%20pulse%20-%20takenlog.png`,
+    alt: 'GymOps Pulse — Takenlog',
+    caption: 'Takenlog',
+  },
+  {
+    src: `${BLOB_BASE}/gymops%20pulse%20-%20kpi%20overzicht.png`,
+    alt: 'GymOps Pulse — KPI Dashboard',
+    caption: 'KPI dashboard',
+  },
+];
 
 export default function PulsePage() {
   const coachFeatures = [
@@ -56,9 +92,22 @@ export default function PulsePage() {
         </div>
       </section>
 
-      {/* Staff App */}
+      {/* Screenshot showcase */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScreenshotShowcase
+            title="Pulse in actie"
+            subtitle="Van dagelijkse checklists tot real-time management inzicht."
+            screenshots={pulseScreenshots}
+            accentColor="teal"
+          />
+        </div>
+      </section>
+
+      {/* Staff App + Dashboard */}
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-section-gradient" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Coach App */}
             <div>
@@ -103,9 +152,8 @@ export default function PulsePage() {
       </section>
 
       {/* Waarom Pulse */}
-      <section className="section-padding relative">
-        <div className="absolute inset-0 bg-section-gradient" />
-        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="section-padding">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
             Geen WhatsApp-groepen meer voor operationele zaken
           </h2>

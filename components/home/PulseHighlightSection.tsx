@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PulseHighlightSection() {
   const features = [
@@ -90,35 +91,26 @@ export default function PulseHighlightSection() {
             </Link>
           </div>
 
-          {/* Right: Visual mockup */}
+          {/* Right: Real screenshot */}
           <div className="relative">
-            <div className="glass-card rounded-2xl p-6 border-teal/10">
-              {/* Mockup header */}
-              <div className="flex items-center gap-2 mb-6 pb-4 border-b border-white/[0.06]">
-                <div className="w-3 h-3 rounded-full bg-cinnabar/60" />
-                <div className="w-3 h-3 rounded-full bg-jonquil/60" />
-                <div className="w-3 h-3 rounded-full bg-teal/60" />
-                <span className="text-dark-500 text-xs ml-2 font-mono">pulse.gymops.nl</span>
+            <div className="glass-card rounded-2xl p-2 md:p-3 border-teal/10">
+              {/* Browser header */}
+              <div className="flex items-center gap-2 px-3 py-2 border-b border-white/[0.06] mb-2">
+                <div className="flex gap-1.5">
+                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-dark-600" />
+                </div>
+                <span className="text-dark-500 text-[10px] font-mono ml-2">GymOps Pulse — Staff App</span>
               </div>
-
-              {/* Mockup checklist */}
-              <div className="space-y-3 mb-6">
-                <p className="text-xs text-dark-400 uppercase tracking-wider mb-2">Opening checklist — Maandag</p>
-                {['Verlichting & muziek aan', 'Materiaal check', 'Whiteboard bijwerken', 'Koffiezetapparaat starten'].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 p-2.5 rounded-lg bg-white/[0.03]">
-                    <div className={`w-5 h-5 rounded flex items-center justify-center text-xs ${i < 3 ? 'bg-teal text-white' : 'border border-dark-600'}`}>
-                      {i < 3 && '✓'}
-                    </div>
-                    <span className={`text-sm ${i < 3 ? 'text-dark-400 line-through' : 'text-dark-200'}`}>{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Mockup handover */}
-              <div className="p-3 rounded-lg bg-teal/5 border border-teal/10">
-                <p className="text-xs text-teal mb-1 font-medium">💬 Shift handover — Coach Lisa</p>
-                <p className="text-xs text-dark-400">&quot;Rij 3 rower maakt geluid, even laten checken. Verder alles top!&quot;</p>
-              </div>
+              <Image
+                src="https://jfwdrup73imvcrrq.public.blob.vercel-storage.com/screenshots/Gymops%20pulse%20-%20staff%20app.PNG"
+                alt="GymOps Pulse staff app met checklists en shift-handovers"
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg"
+                unoptimized
+              />
             </div>
           </div>
         </div>

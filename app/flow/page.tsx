@@ -1,11 +1,42 @@
-import Link from 'next/link';
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'GymOps Flow — Leads & Marketing op Autopilot',
-  description:
-    'Automatische leadopvolging, handgeschreven kaarten, event flows, Google Reviews en meer. GymOps Flow is jouw complete marketing- en retentiesysteem voor micro gyms.',
-};
+import Link from 'next/link';
+import ScreenshotShowcase from '@/components/ScreenshotShowcase';
+
+const BLOB_BASE = 'https://jfwdrup73imvcrrq.public.blob.vercel-storage.com/screenshots';
+
+const flowScreenshots = [
+  {
+    src: `${BLOB_BASE}/Gymops%20flow%20-%20lead%20overzicht.png`,
+    alt: 'GymOps Flow — Lead Pipeline',
+    caption: 'Lead pipeline',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20flow%20-%20automated%20whatsapps.png`,
+    alt: 'GymOps Flow — Automatische WhatsApp',
+    caption: 'WhatsApp automatisering',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20flow%20-%20automation.png`,
+    alt: 'GymOps Flow — Automatiseringen',
+    caption: 'Automatiseringen',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20flow%20-%20contacten%20overzicht.png`,
+    alt: 'GymOps Flow — Contacten',
+    caption: 'Contacten overzicht',
+  },
+  {
+    src: `${BLOB_BASE}/Gymops%20flow%20-%20handgeschreven%20kaarten.png`,
+    alt: 'GymOps Flow — Handgeschreven kaarten',
+    caption: 'Kaarten versturen',
+  },
+  {
+    src: `${BLOB_BASE}/Gymopse%20flow%20-%20handgeschreven%20kaart%20voorbeeld.jpg`,
+    alt: 'GymOps Flow — Kaart voorbeeld',
+    caption: 'Echt resultaat',
+  },
+];
 
 export default function FlowPage() {
   const triggerExamples = [
@@ -89,9 +120,22 @@ export default function FlowPage() {
         </div>
       </section>
 
-      {/* Wat is Flow */}
+      {/* Screenshot showcase */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScreenshotShowcase
+            title="Bekijk het platform"
+            subtitle="Een volledig ingericht systeem — klaar om voor jou te werken."
+            screenshots={flowScreenshots}
+            accentColor="cinnabar"
+          />
+        </div>
+      </section>
+
+      {/* Wat is Flow */}
+      <section className="section-padding relative">
+        <div className="absolute inset-0 bg-section-gradient" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
               Meer dan een CRM. Een complete groeimachine.
@@ -120,8 +164,7 @@ export default function FlowPage() {
 
       {/* Sportbit Koppeling */}
       <section className="section-padding relative">
-        <div className="absolute inset-0 bg-section-gradient" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-teal/10 text-teal border border-teal/20 mb-4">
